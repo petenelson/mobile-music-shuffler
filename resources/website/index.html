@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Mobile Music Shuffler</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="Stylesheet" type="text/css" href="styles.css" />
+
+</head>
+<body>
+
+	<div id="page">
+	
+	
+		<div>
+			<h2>Mobile Music Shuffler</h2>
+			<p>
+				Author: Pete Nelson <a href="mailto:pete@petenelson.com?Subject=Mobile Music Shuffler Feedback">pete@petenelson.com</a>
+			</p>
+
+			<ul class="large">
+				<li><a href="#appAbout">About This App</a></li>
+				
+				<li>Overview</li>
+					<ul>
+						<li><a href="#appOverviewMain">Main Screen</a></li>
+						<li><a href="#appOverviewGestures">Gestures</a></li>
+						<li><a href="#appOverviewSearch">Search</a></li>
+					</ul>
+				<li><a href="#appDoesNot">What It Doesn't Do</a></li>
+				<li><a href="#appReleaseHistory">Release History</a></li>
+				<li><a href="#appTODO">To-Do List</a></li>
+			</ul>
+
+			<hr />
+		</div>
+
+
+
+		<div id="appAbout">
+			<h3>About This App</h3>
+			<p>
+				My Nexus One is the primary music player I use while I drive.  I typically put all my songs on shuffle, hit play and skip through until I find something I like.  	
+				The built-in player that comes with Android has pretty small buttons and it's tricky to hit these while driving without taking your eyes off the road to hit the right button.  
+				I needed a music player with huge buttons.  
+				<span class="bold">HUGE.</span>
+			</p>
+
+			<p>
+				There are a couple existing Android apps that have large buttons, but nothing that suited my needs.  I wanted a simple music player with large buttons that shuffled through 
+				all my songs so it's easy to use while I drive.  So, since I'm a software developer, I decided to write my own, which gives me an app that does exactly what I want and lets me learn Android development in the process.
+			</p>
+
+			<p>
+				PLEASE send me feeback if you run into any problems.  Be sure to include the type of phone/tablet you'e on, the version of Android and
+				as much info on what you were doing in the app when you encountered the issue.  Send feedback to <a href="mailto:pete@petenelson.com?Subject=Mobile Music Shuffler Feedback">pete@petenelson.com</a>.
+			</p>
+
+			<hr />
+
+		</div>
+
+		
+
+		<div id="appOverview" >
+			<h3>Overview</h3>
+
+
+				<div id="appOverviewMain">
+					<h4>Main Screen</h4>
+
+					Launching the Mobile Music Shuffler presents the main user interface.  On startup, it will load all the music available on your phone and shuffle the list for playback.  
+					It works in either orientation.  
+
+				
+					I personally use it by putting my phone in a cupholder, so it's typically in landscape thus making the Next button quite prominent.
+			
+					<br /><br />
+
+					From left-to-right:
+					<ul>
+						<li>Previous Song: If the player is paused, it will go to the previous song.  If it's playing, it will go back to the beginning of the song, unless you are two seconds or
+						less into the song, then it will go the previous song. Swipe Gesture: Right-to-left</li>
+						<li>
+							Play/Pause: Plays or pauses the current song. Swipe Gesture: up and down like a letter V
+						</li>
+						<li>
+							Next Song: A regular press goes to the next song.  A long press will go to the next song by the same artist.  Swipe Gesture: Left-to-right
+						</li>
+						<li>
+							Other swipe gestures:  Draw a circle to reload all songs.  Draw a zig-zag (letter Z) to bring up playlists.
+						</li>
+
+					</ul>
+				
+					
+
+					If a song is playing and you hit the Back or Home button on your phone, the song will continue playing and a notification will be displayed with the title and artist allowing you
+					to get back to the app. If a song is not being played, hitting the back button will "exit" the application and clear any notification.
+
+					<br /><br />
+
+
+					In the lower-left, it shows you how many songs are loaded.  In the lower-right, it shows you the current song's position and duration.
+
+
+
+					<br /><br />
+
+					<div class="center">
+						<img src="home-portrait.png" alt="" class="center" />
+						<br /><br />
+
+						<img src="home-landscape.png" alt="" class="center" />
+					</div>
+
+				</div>
+
+				<br />
+
+				<div id="appOverviewGestures">
+					
+					<h4>Gestures</h4>
+
+					By default, gesstures are enabled but can be configured to your liking or turned off entirely.  Check the Settings menu for customizations.
+					<br />
+					<br />
+
+					Left-to-right (next song) or right-to-left (previous song)
+					<div class="center">
+						<img src="gesture-left-to-right.png" alt="" class="center" />
+					</div>
+
+					<br />
+					<br />
+					Right arrow (next song by same artist)
+					<div class="center">
+						<img src="gesture-right-arrow.png" alt="" class="center" />
+					</div>
+
+					<br />
+					<br />
+					Down arrow (play/pause)
+					<div class="center">
+						<img src="gesture-down-arrow.png" alt="" class="center" />
+					</div>
+
+					<br />
+					<br />
+					Zigzag (playlists)
+					<div class="center">
+						<img src="gesture-zigzag.png" alt="" class="center" />
+					</div>
+
+					<br />
+					<br />
+					Circle (all songs)
+					<div class="center">
+						<img src="gesture-circle.png" alt="" class="center" />
+					</div>
+
+
+				</div>
+
+
+
+				<br />
+
+				<div id="appOverviewSearch">
+
+					<h4>Search</h4>
+
+					Hitting the search button will bring up a search dialog.  Don't do this while you're driving.  
+					<div class="center">
+					<img  src="search-dialog-initial.png" alt="" />
+					</div>
+
+					<br /><br />
+
+					The search function combines the artist and title and then looks for all the keywords you entered in that combination.  Let's see what sort of
+					Frank Sinatra we have.  
+					<br /><br />
+					<div class="center">
+						<img  src="search-dialog-one-word.png" alt="" />
+					</div>
+					<br /><br />
+
+					Well, maybe we want Relax by Frankie Goes to Hollywood instead.  We don't need to type Frankie, just the first part of Relax to filter the list even further.
+					<br /><br />
+					<div class="center">
+					<img  src="search-dialog-multi-words-01.png" alt="" />
+					</div>
+					<br /><br />
+
+					You don't even need to use full words.  It will do partial word searches as well.  Let's find Crush 'Em by Megadeth.
+					<br /><br />
+					<div class="center">
+					<img  src="search-dialog-multi-words-02.png" alt="" />
+					</div>
+
+					<br /><br />
+
+					Clicking Go will bring up a full list of matches.  If I search for Cash, you'll see I'm a big fan of the man in black.
+					<br /><br />
+					<div class="center">
+					<img  src="search-dialog-all-matches.png" alt="" />
+					</div>
+
+					<br /><br />
+
+					Clicking on a match in any of these screens will start playing the song right away.
+
+					<br /><br />
+
+
+
+
+				</div>
+
+
+
+
+			<hr />
+		</div>
+
+
+		<div id="appDoesNot">
+			<h3>What It Does't Do</h3>
+
+			Since I wrote this for the way I listen to music while I drive (everything on shuffle), it doesn't do:
+
+				<ul>
+					<li>Album Art</li>
+					<li>Album Names</li>
+				</ul>
+
+				That's not saying I won't add some of these functions in future versions, but for now, these aren't included.
+
+				<hr />
+		</div>
+
+
+
+		<div id="appReleaseHistory">
+			<h3>Release History</h3>
+			
+			<h4>v1.1.2, Jan 23 2011</h4>
+			<ul>
+				<li>Fixed a bug where searching for music was including non-music files</li>
+			</ul>
+
+			<h4>v1.1.1, Apr 25 2011</h4>
+			<ul>
+				<li>Minor bug fixes to the preferences and search UI</li>
+			</ul>
+
+			<h4>v1.1.0, Mar 21 2011</h4>
+			<ul>
+				<li>Added optional support to control the player via Bluetooth or headset controls</li>
+			</ul>
+
+
+			<h4>v1.0.0, Mar 17 2011</h4>
+			<ul>
+				<li>Added an option to turn off the buttons and use only gestures to control the player</li>
+			</ul>
+
+			<h4>v0.9.9, Mar 9 2011</h4>
+			<ul>
+				<li>Added code to filter out songs that are unplayable or with a duration of less than one second</li>
+				<li>Minor bug fixes</li>
+				<li>Released to Android Market</li>
+			</ul>
+
+			<h4>v0.9.8 Beta, Mar 8 2011</h4>
+			<ul>
+				<li>Added left arrow and right arrow gestures</li>
+				<li>All gestures are now configurable</li>
+			</ul>
+
+			<h4>v0.9.7 Beta, Mar 2 2011</h4>
+			<ul>
+				<li>Added gestures for next, previous, play/pause, all songs and playlists</li>
+				<li>Enabled voice search in the search dialog</li>
+				<li>Unplugging the headphone/aux cable automatically pauses the player</li>
+			</ul>
+
+			<h4>v0.9.6 Beta, Feb 27 2011</h4>
+			<ul>
+				<li>New buttons!</li>
+				<li>Added an option to allow the player to be displayed on the lock screen</li>
+				<li>Fixed some bugs with unmounting the SD card or deleting music and the player not detecting it</li>
+			</ul>
+
+
+			<h4>v0.9.5 Beta, Feb 26 2011</h4>
+			<ul>
+				<li>Added support for playlists</li>
+			</ul>
+
+			<h4>v0.9.4 Beta, Feb 24 2011</h4>
+			<ul>
+				<li>Various bug fixes</li>
+			</ul>
+
+
+			<h4>v0.9.3 Beta, Feb 23 2011</h4>
+			<ul>
+				<li>Added a Settings menu.  Screen lock and pausing playback on incoming calls are now configurable</li>
+				<li>Added About page</li>
+			</ul>
+
+
+			<h4>v0.9.2 Beta, Feb 22 2011</h4>
+			<ul>
+				<li>Added a new custom icon instead of the default icon</li>
+				<li>Added a Quit button to shutdown the background media player service</li>
+				<li>Slightly increased the width of the Play/Pause button and slightly decreased the width of the Next button</li>
+				<li>If a song is playing and a phone call comes in, the song with be automatically paused.  This will be a configurable option in a future release.</li> 
+			</ul>
+
+			<h4>v0.9 Beta, Feb 20 2011</h4>
+			<ul>
+				<li>Initial beta release</li>
+			</ul>
+			
+			<hr />
+		</div>
+
+
+		<div id="appTODO">
+			<h3>To-Do List</h3>
+			
+
+			<ul>
+				<li>Better voice search, such as commands like "play title XYZ"</li>
+			</ul>
+			
+			<hr />
+		</div>
+
+
+
+	</div>
+
+
+</body>
+</html>

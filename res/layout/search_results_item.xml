@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView android:layout_height="wrap_content" android:id="@+id/textSearchTitle" android:layout_width="wrap_content" android:text="title" android:textSize="20dip"></TextView>
+    <TextView android:id="@+id/textSearchArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textSearchTitle" android:text="artist" android:textSize="16dip"></TextView>
+</RelativeLayout>

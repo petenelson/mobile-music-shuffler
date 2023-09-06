@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_refresh" android:id="@+id/itemReshuffle" android:title="@string/all_songs"></item>
+    <item android:id="@+id/itemPlaylists" android:title="@string/playlists" android:enabled="true" android:icon="@drawable/ic_menu_playlist"></item>
+    <item android:id="@+id/itemQuit" android:title="@string/quit"  android:icon="@drawable/ic_lock_power_off"></item>
+    <item android:title="@string/settings" android:id="@+id/itemPreferences" android:icon="@drawable/ic_menu_preferences"></item>
+    <item android:title="@string/about" android:id="@+id/itemAbout" android:icon="@drawable/ic_menu_info_details" android:enabled="true"></item>
+    
+    
+    
+    
+    
+    
+</menu>

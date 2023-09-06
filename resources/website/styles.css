@@ -1,0 +1,36 @@
+﻿body
+{
+	background-color: #FFFFFF;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+ul.large li
+{
+	font-size: 16px;
+}
+
+.red
+{
+	color: #FF0000;
+}
+
+div#page
+{
+	padding: 4px;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.center
+{
+	text-align: center;
+}
+
+div.bm
+{
+	margin-bottom: 40px;
+}

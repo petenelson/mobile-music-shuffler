@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	 
+      package="com.gungeeksoftware.MobileMusicShuffler" android:versionName="1.1.3" android:versionCode="28">
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+
+    <application android:icon="@drawable/icon_mms" android:label="@string/app_name" 
+    
+    android:allowClearUserData="true">
+    
+      
+           <meta-data android:name="android.app.default_searchable" android:value=".main" /> 
+ 	
+
+        <activity android:name=".main"
+                  android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:multiprocess="false" android:launchMode="singleTop" android:icon="@drawable/icon_mms">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+	         <intent-filter>
+	            <action android:name="android.intent.action.SEARCH"  />
+	        </intent-filter>
+		
+			<meta-data 
+				android:name="android.app.searchable" 
+				android:resource="@xml/searchable"
+				android:voiceSearchMode="showVoiceSearchButton|launchRecognizer" 
+			/>
+    
+        </activity>
+        
+        <service android:name="com.gungeeksoftware.MobileMusicShuffler.MediaPlayerService">
+        </service>
+        
+        <activity android:name="SearchResults" android:configChanges="keyboard|keyboardHidden|orientation">
+        </activity>
+        <provider android:authorities="com.petenelson.MobileMusicShuffler.SongProvider" android:name="com.gungeeksoftware.MobileMusicShuffler.SongProvider"></provider>
+        <activity android:name="com.gungeeksoftware.MobileMusicShuffler.Preferences" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <receiver android:name="RemoteControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"></action>
+            </intent-filter>
+        </receiver>
+        
+
+
+    </application>
+    
+    
+    
+    <uses-sdk android:minSdkVersion="7"/>
+
+</manifest>

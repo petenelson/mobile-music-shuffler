@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="@string/pref_general" android:key="@string/KEY_PREF_GENERAL">
+	<CheckBoxPreference android:key="@string/KEY_KEEP_SCREEN_ON" android:title="@string/pref_keep_screen_on" android:summary="@string/pref_keep_screen_on_summary"></CheckBoxPreference>
+    <CheckBoxPreference android:key="@string/KEY_PAUSE_ON_PHONE_CALL" android:title="@string/pref_pause_on_call" android:summary="@string/pref_pause_on_call_summary"></CheckBoxPreference>
+	<CheckBoxPreference android:key="@string/KEY_SHOW_ON_LOCK_SCREEN" android:summary="@string/pref_show_on_lock_screen_summary" android:title="@string/pref_show_on_lock_screen"></CheckBoxPreference>
+	<CheckBoxPreference android:title="@string/pref_no_buttons" android:key="@string/KEY_NO_BUTTONS" android:summary="@string/pref_no_buttons_summary" android:defaultValue="false"></CheckBoxPreference>
+	<CheckBoxPreference android:summary="@string/pref_handle_bluetooth_desc" android:key="@string/KEY_HANDLE_BLUETOOTH" android:title="@string/pref_handle_bluetooth" android:defaultValue="false"></CheckBoxPreference>
+  
+  </PreferenceCategory>
+    
+	<PreferenceCategory android:title="@string/pref_gestures" android:key="@string/KEY_GESTURES"><CheckBoxPreference android:summary="@string/pref_gestured_enabled_summary" android:key="@string/KEY_GESTURES_ENABLED" android:title="@string/pref_gestured_enabled" android:shouldDisableView="true" android:defaultValue="true"></CheckBoxPreference>
+	    <ListPreference android:title="@string/pref_left_to_right" android:key="@string/KEY_GESTURE_LEFT_TO_RIGHT" android:dialogTitle="@string/pref_left_to_right" android:entries="@array/KEY_GESTURE_COMMANDS" android:entryValues="@array/KEY_GESTURE_COMMANDS" android:dependency="@string/KEY_GESTURES_ENABLED" android:defaultValue="@string/Previous"></ListPreference>
+		<ListPreference android:title="@string/pref_right_to_left" android:key="@string/KEY_GESTURE_RIGHT_TO_LEFT" android:dialogTitle="@string/pref_right_to_left" android:entries="@array/KEY_GESTURE_COMMANDS" android:entryValues="@array/KEY_GESTURE_COMMANDS" android:dependency="@string/KEY_GESTURES_ENABLED" android:defaultValue="@string/Next"></ListPreference>
+		<ListPreference  android:title="@string/pref_down_arrow" android:key="@string/KEY_GESTURE_DOWN_ARROW" android:dialogTitle="@string/pref_down_arrow" android:entries="@array/KEY_GESTURE_COMMANDS" android:entryValues="@array/KEY_GESTURE_COMMANDS" android:dependency="@string/KEY_GESTURES_ENABLED" android:defaultValue="@string/Play"></ListPreference>
+		<ListPreference android:title="@string/pref_circle" android:key="@string/KEY_GESTURE_CIRCLE" android:dialogTitle="@string/pref_circle" android:entries="@array/KEY_GESTURE_COMMANDS" android:entryValues="@array/KEY_GESTURE_COMMANDS" android:dependency="@string/KEY_GESTURES_ENABLED" android:defaultValue="@string/All_Songs"></ListPreference>
+		<ListPreference android:title="@string/pref_zigzag" android:key="@string/KEY_GESTURE_ZIGZAG" android:dialogTitle="@string/pref_zigzag" android:entries="@array/KEY_GESTURE_COMMANDS" android:entryValues="@array/KEY_GESTURE_COMMANDS" android:dependency="@string/KEY_GESTURES_ENABLED" android:defaultValue="@string/Playlists"></ListPreference>
+		<ListPreference android:title="@string/pref_right_arrow" android:key="@string/KEY_GESTURE_RIGHT_ARROW" android:dialogTitle="@string/pref_right_arrow" android:entries="@array/KEY_GESTURE_COMMANDS" android:entryValues="@array/KEY_GESTURE_COMMANDS" android:dependency="@string/KEY_GESTURES_ENABLED" android:defaultValue="@string/Next_Same"></ListPreference>
+		<ListPreference android:title="@string/pref_left_arrow" android:key="@string/KEY_GESTURE_LEFT_ARROW" android:dialogTitle="@string/pref_left_arrow" android:entries="@array/KEY_GESTURE_COMMANDS" android:entryValues="@array/KEY_GESTURE_COMMANDS" android:dependency="@string/KEY_GESTURES_ENABLED" android:defaultValue="@string/None"></ListPreference>
+
+	</PreferenceCategory>
+    
+</PreferenceScreen>

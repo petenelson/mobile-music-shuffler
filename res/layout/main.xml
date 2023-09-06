@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+	    
+
+
+
+ <android.gesture.GestureOverlayView
+	android:id="@+id/gestures"
+	android:layout_width="fill_parent" 
+    android:layout_weight="1" 
+    android:layout_height="fill_parent" > 
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <TableLayout android:id="@+id/tableButtons" android:layout_width="fill_parent" android:minHeight="100dip" android:layout_marginTop="6dip" android:layout_marginLeft="4dip" android:layout_marginRight="4dip" android:layout_height="125dip">
+        <TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent" android:baselineAligned="true" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/buttonPrev" android:minHeight="125dip" android:scaleType="fitXY" android:layout_width="0dp" android:layout_weight=".1" android:layout_height="fill_parent" android:src="@drawable/ib_prev"></ImageButton>
+            <ImageButton android:id="@+id/buttonPlay" android:scaleType="fitXY" android:minHeight="125dip" android:clickable="false" android:layout_width="0dp" android:layout_weight=".2" android:src="@drawable/ib_play" android:layout_height="fill_parent" android:maxHeight="125dip"></ImageButton>
+            <ImageButton android:id="@+id/buttonNext" android:minHeight="125dip" android:clickable="false" android:longClickable="true" android:src="@drawable/ib_next" android:scaleType="fitXY" android:layout_width="0dp" android:layout_weight=".55" android:layout_height="fill_parent" android:maxHeight="125dip"></ImageButton>
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView android:layout_height="wrap_content" android:id="@+id/textTitle" android:layout_below="@+id/tableButtons" android:textSize="30dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:text="@string/loading" android:layout_centerHorizontal="true" android:layout_width="fill_parent" android:gravity="center_vertical|center_horizontal"></TextView>
+    <TextView android:layout_height="wrap_content" android:textSize="20dip" android:id="@+id/textArtist" android:layout_below="@+id/textTitle" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:layout_centerHorizontal="true" android:layout_width="fill_parent" android:gravity="center_vertical|center_horizontal"></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textNumberOfSongs" android:layout_marginBottom="6dip" android:text="@string/loading" android:layout_marginLeft="6dip" android:layout_marginRight="40dip" android:layout_alignParentBottom="true" ></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textPositionAndDuration"  android:layout_alignParentBottom="true" android:layout_marginBottom="6dip" android:layout_alignParentRight="true" android:layout_marginRight="6dip"></TextView>
+    
+</RelativeLayout>    
+    
+     </android.gesture.GestureOverlayView> 
+    
+	    
+ </LinearLayout> 

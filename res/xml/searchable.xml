@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:hint="@string/search_hint" 
+  android:label="@string/search_label" 
+  android:includeInGlobalSearch="false"
+
+        android:searchSuggestAuthority="com.petenelson.MobileMusicShuffler.SongProvider"
+        android:searchSuggestIntentData="content://com.petenelson.MobileMusicShuffler.SongProvider/songs"
+        android:searchSuggestIntentAction="android.intent.action.VIEW"
+        android:searchSuggestThreshold="2"
+        android:searchSuggestSelection=" ?"
+  
+  >
+</searchable>

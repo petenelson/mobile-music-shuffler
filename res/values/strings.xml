@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobile Music Shuffler</string>
+    <string name="songs_loaded">songs</string>
+    <string name="loading_music">Loading music...</string>
+    <string name="no_songs_to_play">No songs to play</string>
+    <string name="info">Info</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading...</string>
+    <string name="reshuffle">Reshuffle</string>
+    <string name="about">About</string>
+    <string name="no_sd_card">No SD card was detected</string>
+    <string name="search_hint">Title or Artist</string>
+    <string name="search_label">search label</string>
+    <string name="query_required">A search query is required.</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="sure_want_to_quit">Are you sure you want to quit?</string>
+    <string name="playlists">Playlists</string>
+    <string name="quit">Quit</string>
+    <string name="pref_keep_screen_on">Keep Screen On</string>
+    <string name="settings">Settings</string>
+    <string name="pref_keep_screen_on_summary">Keeps the screen from locking while playback is visible.</string>
+    <string name="pref_pause_on_call">Pause on Phone Call</string>
+    <string name="pref_pause_on_call_summary">Pauses playback when you receive an incoming phone call</string>
+    <string name="version">Version</string>
+    <string name="app_author">Author</string>
+    <string name="OK">OK</string>
+    <string name="visit_www">Visit WWW</string>
+    <string name="app_home_page_url">http://www.petenelson.com/Android/mms</string>
+	<string name="all_songs">All Songs</string>
+	<string name="no_playlists">No Playlists</string>
+    <string name="no_playlists_defined">You do not have any playlists defined.</string>
+
+    <string name="KEY_KEEP_SCREEN_ON">KEY_KEEP_SCREEN_ON</string>
+    <string name="KEY_PAUSE_ON_PHONE_CALL">KEY_PAUSE_ON_PHONE_CALL</string>
+    <string name="KEY_SHOW_ON_LOCK_SCREEN">KEY_SHOW_ON_LOCK_SCREEN</string>
+    <string name="pref_show_on_lock_screen">Show on Lock Screen</string>
+    <string name="pref_show_on_lock_screen_summary">If the player is visible and the screen is locked, the player will still be visible when the screen is turned back on.</string>
+    <string name="unable_to_load_gestures">Error: Unable to load gestures library</string>
+	<string name="pref_gestures">Gestures</string>
+
+    <string name="pref_gestured_enabled">Gestures Enabled</string>
+    <string name="pref_gestured_enabled_summary">Allow gestures to control the player.</string>
+    <string name="KEY_GESTURES">KEY_GESTURES</string>
+    <string name="KEY_GESTURES_ENABLED">KEY_GESTURES_ENABLED</string>
+    <string name="KEY_PREF_GENERAL">KEY_PREF_GENERAL</string>
+    <string name="pref_general">General</string>
+    
+    <string name="KEY_GESTURE_LEFT_TO_RIGHT">KEY_GESTURE_LEFT_TO_RIGHT</string>
+    <string name="KEY_GESTURE_RIGHT_TO_LEFT">KEY_GESTURE_RIGHT_TO_LEFT</string>
+    <string name="KEY_GESTURE_DOWN_ARROW">KEY_GESTURE_DOWN_ARROW</string>
+    <string name="KEY_GESTURE_ZIGZAG">KEY_GESTURE_ZIGZAG</string>
+    <string name="KEY_GESTURE_CIRCLE">KEY_GESTURE_CIRCLE</string>
+    <string name="KEY_GESTURE_RIGHT_ARROW">KEY_GESTURE_RIGHT_ARROW</string>
+    <string name="KEY_GESTURE_LEFT_ARROW">KEY_GESTURE_LEFT_ARROW</string>
+
+	<string name="None">-None-</string>
+	<string name="Play">Play</string>
+	<string name="Previous">Previous</string>
+	<string name="Next">Next</string>
+	<string name="All_Songs">All Songs</string>
+	<string name="Playlists">Playlists</string>
+	<string name="Next_Same">Next Song by Same Artist</string>
+	
+
+    <string-array name="KEY_GESTURE_COMMANDS">
+    	<item>-None-</item>
+        <item>Play</item>
+        <item>Previous</item>
+        <item>Next</item>
+        <item>All Songs</item>
+        <item>Playlists</item>
+        <item>Next Song by Same Artist</item>
+    </string-array>
+        
+        <string name="pref_left_to_right">Left to right</string>
+        <string name="pref_right_to_left">Right to left</string>
+        <string name="pref_down_arrow">Down Arrow</string>
+        <string name="pref_circle">Circle</string>
+        <string name="pref_zigzag">Zigzag</string>
+        <string name="pref_right_arrow">Right Arrow</string>
+        <string name="pref_left_arrow">Left Arrow</string>
+        
+        <string name="gesture_right_to_left">right to left</string>
+        <string name="gesture_left_to_right">left to right</string>
+        <string name="gesture_circle">circle</string>
+        <string name="gesture_down_arrow">down arrow</string>
+        <string name="gesture_zigzag">zigzag</string>
+        <string name="gesture_right_arrow">right arrow</string>
+        <string name="gesture_left_arrow">left arrow</string>
+        <string name="error_playing_song">Error Playing Song</string>
+        <dimen name="BUTTON_HEIGHT_STANDARD">125dip</dimen>
+        <dimen name="BUTTON_HEIGHT_COLLAPSED">0dip</dimen>
+        <string name="KEY_NO_BUTTONS">KEY_NO_BUTTONS</string>
+        <string name="pref_no_buttons">Hide Buttons</string>
+        <string name="pref_no_buttons_summary">Hides the buttons and uses gestures only for controlling the player.</string>
+        <string name="KEY_HANDLE_BLUETOOTH">KEY_HANDLE_BLUETOOTH</string>
+        <string name="pref_handle_bluetooth">Use Bluetooth/Headset Controls</string>
+        <string name="pref_handle_bluetooth_desc">Allows the player to be controlled by Bluetooth or headset controls.</string>
+
+
+</resources>
